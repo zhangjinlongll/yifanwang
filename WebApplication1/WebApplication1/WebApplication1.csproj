@@ -86,7 +86,8 @@
     <Content Include="js\angular.js" />
     <Content Include="js\cart.js" />
     <Content Include="js\controllers.js" />
-    <Content Include="ListForAngular.html" />
+    <Content Include="折扣购物车.aspx" />
+    <Content Include="控制器ng-controller以及ng-model指令的作用.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -97,6 +98,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="模型、视图、控制器（MVC）（双向绑定静态数据）.aspx" />
+    <Content Include="表单输入（自动提交和非自动提交）.aspx" />
+    <Content Include="购物车列表.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add.aspx.cs">
@@ -114,6 +118,34 @@
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="折扣购物车.aspx.cs">
+      <DependentUpon>折扣购物车.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="折扣购物车.aspx.designer.cs">
+      <DependentUpon>折扣购物车.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="模型、视图、控制器（MVC）（双向绑定静态数据）.aspx.cs">
+      <DependentUpon>模型、视图、控制器（MVC）（双向绑定静态数据）.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="模型、视图、控制器（MVC）（双向绑定静态数据）.aspx.designer.cs">
+      <DependentUpon>模型、视图、控制器（MVC）（双向绑定静态数据）.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="表单输入（自动提交和非自动提交）.aspx.cs">
+      <DependentUpon>表单输入（自动提交和非自动提交）.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="表单输入（自动提交和非自动提交）.aspx.designer.cs">
+      <DependentUpon>表单输入（自动提交和非自动提交）.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="购物车列表.aspx.cs">
+      <DependentUpon>购物车列表.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="购物车列表.aspx.designer.cs">
+      <DependentUpon>购物车列表.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

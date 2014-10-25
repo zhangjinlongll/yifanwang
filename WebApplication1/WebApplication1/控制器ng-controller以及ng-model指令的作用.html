@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app=""><!--全局定义引入angular（必须）-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="js/angular.js"></script>
+    <script>
+        function HelloController($scope)   //scope变量是固定的写法 不能看做一般的参数
+        {
+            $scope.greeting = { text: "hellow world!"};//定义greeting变量
+        }
+    </script>
+</head>
+<body>
+    <div ng-controller='HelloController'> <!--控制器-->
+        <input ng-model='greeting.text'/> <!--数据绑定-->
+        <p>{{greeting.text}}, World</p>   <!--实现双向绑定{{}}-->
+    </div>
+</body>
+</html>
