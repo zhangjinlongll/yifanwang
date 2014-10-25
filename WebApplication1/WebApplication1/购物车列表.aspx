@@ -6,12 +6,14 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="css/cart.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <table ng-controller="CartController">
+        <table ng-controller="CartController" class="tab_title">
             <thead>
-                <tr>
+                <tr class="formtable">
                     <th>名称</th>
                     <th>数量</th>
                     <th>单价</th>
@@ -33,6 +35,7 @@
   </tr>
   </thead>--%>
             </tr>
+            
             <script src="js/angular-1.0.1.min.js"></script>
             <script>
                 function CartController($scope) {
